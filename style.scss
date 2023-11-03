@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;700;800&display=swap');
+
+$fontFamily: 'Urbanist', sans-serif;
+$fw200: 200;
+$fw400: 400;
+$fw700: 700;
+$fw800: 800;
+
+$bg: #101010;
+$yellow: #bda400;
+$white: white;
+
+body {
+    background-color: $bg;
+    font-family: $fontFamily;
+}
+
+h2 {
+    color: $yellow;
+    font-size: 20px;
+}
+
+p {
+    color: $white;
+    font-size: 16px;
+}
+
+li {
+    color: $white;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: underline;
+    color:#bda400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+article {
+    border: 1px solid $yellow;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+code {
+    color: grey;
+    font-size: 16px;
+}
+
+button {
+    background-color: $yellow;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}

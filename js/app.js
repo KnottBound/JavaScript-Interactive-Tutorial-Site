@@ -1,6 +1,5 @@
 //The Document is an Object. The Write is a Method write().
 document.write("<h2>This was written in JavaScript<h2>");
-
 function makeYellow() {
     // This is a simple function named 'makeYellow'.
     
@@ -18,5 +17,21 @@ function makeGreen () {
 
 // Creating Get JS Button 'js-button' from DOM, Add Event Listener with Event Listener 'Click' and Event Handler Method jsBtnClick() ,
 document.getElementById('js-button').addEventListener('click', jsBtnClick = () => {
-    document.getElementById('event').style.color ='orange';
+    document.getElementById('js-button').style.backgroundColor ='green';
+})
+
+
+document.getElementById('light-mode').addEventListener('click', colorSwap = () => {
+    document.getElementById('light-mode').style.backgroundColor ='#101010';
+    document.getElementById('light-mode').style.border ='1px solid #bda400';
+    document.getElementById('light-mode').style.color ='#bda400';
+})
+
+
+let day = 1;
+let text = " Day "
+let x = " or "
+
+document.getElementById('variables').addEventListener('click', printString = () => {
+    document.getElementById('variable-js-example').innerHTML = text + day + x + day + text;
 })

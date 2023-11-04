@@ -16,8 +16,9 @@
     </header>
     <main>
         <div class="container">
+            </div>
         <article>
-            <h2>What is JavaScript?</h1>
+            <h2 id="js">What is JavaScript?</h1>
             <p>
                 <ul>
                     <li>JavaScript 'thinks' in terms of "things/objects" in JS they are called Objects.</li>
@@ -62,10 +63,46 @@
                     </code>
                     <li>Objects can be presented as either methods 'document.getElementById()' or properties 'document.URL' with dots between. </li>
                     <li>Events are not always user dependant, for example the 'onLoad' Event Handler </li>
-                    <button id="js-button">Click to Make Orange!</button>
+                    <button id="js-button">Click to Make Green! (onClick)</button>
+                    <li>Additional Event Listeners: onBlur, onFocus, onSelect, & onChange mainly used with HTML forms </li>
+                    <button id="light-mode">Color Swap! (onClick + forEach)</button>
                 </ul>
             </p>
         </article>
+        <article>
+            <h2 id="event">Variables & Arrays</h2>
+            <p>
+                <ul>
+                    <li>Variables are Numbers, Letters, & Words which are used to connect to the value assigned to it.</li>
+                    <li>Defining a Variables requires only a name/numbers and a value.</li>
+                    <code>var numberEx = 1; | let stringEx = "JavaScript String"; | const booleanEx = true;</code>
+                    <li>'numberEX', 'stringEX', and 'booleanEx' are variable names. 1, "JavaScript String", and True are values.</li>
+                    <li>Variables have a naming convention called Camel Case: firstLeterSmallFollowingWordsBig</li>
+                    <li>Variables allow can't do much along. So lets create and delcare some variables and add JavaScript!</li>
+                    <code>
+                        let day = 1;<br>
+                        let text = "day"<br>
+                        let x = "or"<br>
+                        document.getElementById('variables').addEventListener('click', printString = () => {<br>
+                            document.getElementById('variable-js-example').innerHTML = text + day + x + day + text;<br>
+                        })<br>
+                    </code>
+                    <button id="variables">Click to Run!</button>
+                    <p id="variable-js-example" style="color: green;"></p>
+                    <li>Arrays are also Variables. Just more Complex & have More Data/Values!</li>
+                    <li>Arrays Index Values starting at 0</li>
+                    <code>
+                        const days = new Array()<br>
+                        days[0] = "Sunday";<br>
+                        days[1] = "Monday";<br>
+                        days[2] = "Tuesday";<br>
+                        days[3] = "Wednesday";<br>
+                        days[4] = "Thursday;<br>
+                        days[5] = "Friday";<br>
+                        days[6] = "Saturday";<br>
+                    </code>
+                </ul>
+            </p>
         </div>
     </main>
     <footer></footer>

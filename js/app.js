@@ -21,13 +21,6 @@ document.getElementById('js-button').addEventListener('click', jsBtnClick = () =
 })
 
 
-document.getElementById('light-mode').addEventListener('click', colorSwap = () => {
-    document.getElementById('light-mode').style.backgroundColor ='#101010';
-    document.getElementById('light-mode').style.border ='1px solid #bda400';
-    document.getElementById('light-mode').style.color ='#bda400';
-})
-
-
 let day = 1;
 let text = " Day "
 let x = " or "

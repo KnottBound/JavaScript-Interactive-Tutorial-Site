@@ -4,6 +4,10 @@ body {
   font-family: "Urbanist", sans-serif;
 }
 
+h1 {
+  color: #bda400;
+}
+
 h2 {
   color: #bda400;
   font-size: 20px;
@@ -48,4 +52,13 @@ button {
   border: none;
   border-radius: 15px;
   padding: 10px;
+}
+
+table {
+  border: 1px solid white;
+}
+
+td {
+  border: 1px solid white;
+  color: #bda400;
 }/*# sourceMappingURL=style.css.map */
